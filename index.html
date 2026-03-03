@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Tannies | Southeast Asia Travel Consultancy</title>
+  <title>Travel Tannies | Southeast Asia Travel Experts</title>
+  <meta name="description" content="Travel Tannies - Southeast Asia Travel Consultancy. Custom trips, Bali honeymoons, Thailand packages, Vietnam tours and 1-on-1 travel planning.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png">
   <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#e6fffa; color:#0B1F3A; }
+    body { margin:0; font-family: Arial, sans-serif; background:#f0fffc; color:#0B1F3A; }
     header { background:#0B1F3A; color:white; padding:20px; text-align:center; }
     nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { color:#2dd4bf; }
     section { padding:60px 20px; max-width:1100px; margin:auto; }
     h1,h2,h3 { margin-bottom:20px; }
+    .hero { background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover; color:white; padding:120px 20px; text-align:center; }
+    .hero h1 { font-size:48px; }
     .btn { background:#14b8a6; color:#0B1F3A; padding:15px 25px; text-decoration:none; font-weight:bold; border-radius:8px; display:inline-block; }
-    .services, .blog, .testimonials { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .services, .blog, .testimonials, .products { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
     .card { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
     form input, form textarea { width:100%; padding:12px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; }
     footer { background:#0B1F3A; color:white; text-align:center; padding:20px; }
-    .social a { margin:0 10px; text-decoration:none; font-weight:bold; color:#0B1F3A; }
+    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; font-size:20px; text-decoration:none; }
   </style>
 </head>
 <body>
@@ -25,6 +30,7 @@
   <p>Southeast Asia Travel Consultancy</p>
   <nav>
     <a href="#services">Services</a>
+    <a href="#products">Shop</a>
     <a href="#booking">Book</a>
     <a href="#blog">Blog</a>
     <a href="#testimonials">Testimonials</a>
@@ -32,26 +38,46 @@
   </nav>
 </header>
 
-<section>
-  <h2>Southeast Asia Travel Experts</h2>
-  <p>Custom-designed trips across Thailand, Bali, Vietnam, Singapore, Malaysia, Cambodia and more.</p>
-  <a href="#booking" class="btn">Start Planning Now</a>
+<section class="hero">
+  <h1>Your Dream Southeast Asia Trip Starts Here</h1>
+  <p>Bali • Thailand • Vietnam • Singapore • Malaysia • Cambodia</p>
+  <a href="#booking" class="btn">Plan My Trip</a>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce" width="100%">
       <h3>Custom Travel Planning</h3>
-      <p>Personalized itineraries tailored to your interests and budget.</p>
+      <p>Personalized itineraries built around your budget and travel style.</p>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" width="100%">
       <h3>Luxury & Honeymoon Packages</h3>
-      <p>Romantic escapes, private villas and exclusive experiences.</p>
+      <p>Romantic escapes, beachfront villas and unforgettable moments.</p>
     </div>
     <div class="card">
-      <h3>Group & Adventure Tours</h3>
-      <p>Island hopping, food tours and cultural adventures.</p>
+      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" width="100%">
+      <h3>Adventure & Group Tours</h3>
+      <p>Island hopping, street food tours and cultural experiences.</p>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Digital Products & Services</h2>
+  <div class="products">
+    <div class="card">
+      <h3>Southeast Asia Travel Ebook</h3>
+      <p>Download your complete guide to planning the perfect trip.</p>
+      <!-- Replace below with your PayPal button code -->
+      <div>PASTE PAYPAL EBOOK BUTTON HERE</div>
+    </div>
+    <div class="card">
+      <h3>1-on-1 Travel Consultation</h3>
+      <p>Private strategy call to design your custom itinerary.</p>
+      <div>PASTE PAYPAL CALL BUTTON HERE</div>
     </div>
   </div>
 </section>
@@ -61,32 +87,25 @@
   <form action="https://formsubmit.co/talk.travel.vlog@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Full Name" required>
     <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="destination" placeholder="Destination of Interest">
-    <input type="text" name="dates" placeholder="Travel Dates">
-    <textarea name="message" rows="4" placeholder="Tell us about your dream trip"></textarea>
+    <textarea name="message" rows="4" placeholder="Tell us about your trip"></textarea>
     <button type="submit" class="btn">Submit Booking Request</button>
   </form>
-
-  <h3 style="margin-top:40px;">Secure Payment via PayPal</h3>
-  <div class="card">
-    Paste your PayPal button embed code here.
-  </div>
 </section>
 
 <section id="blog">
   <h2>Travel Blog</h2>
   <div class="blog">
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" width="100%">
       <h3>Top 10 Things To Do in Bali</h3>
-      <p>Explore temples, waterfalls and stunning beaches.</p>
     </div>
     <div class="card">
-      <h3>Ultimate Thailand Island Guide</h3>
-      <p>Discover the best islands for relaxation and adventure.</p>
+      <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d" width="100%">
+      <h3>Thailand Island Guide</h3>
     </div>
     <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" width="100%">
       <h3>Vietnam Travel Tips</h3>
-      <p>Everything you need to know before you go.</p>
     </div>
   </div>
 </section>
@@ -94,12 +113,8 @@
 <section id="testimonials">
   <h2>What Our Clients Say</h2>
   <div class="testimonials">
-    <div class="card">
-      "Absolutely seamless experience! Our Bali honeymoon was perfect." – Sarah M.
-    </div>
-    <div class="card">
-      "Professional planning and amazing local knowledge." – James T.
-    </div>
+    <div class="card">"Absolutely seamless Bali honeymoon!" – Sarah M.</div>
+    <div class="card">"Professional and knowledgeable." – James T.</div>
   </div>
 </section>
 
@@ -107,13 +122,9 @@
   <h2>Contact Us</h2>
   <p><strong>Phone / WhatsApp:</strong> +27 71 380 8973</p>
   <p><strong>Email:</strong> talk.travel.vlog@gmail.com</p>
-  <div class="social">
-    <a href="#">Facebook</a>
-    <a href="#">Instagram</a>
-    <a href="#">YouTube</a>
-    <a href="#">TikTok</a>
-  </div>
 </section>
+
+<a class="whatsapp" href="https://wa.me/27713808973" target="_blank">💬</a>
 
 <footer>
   © 2026 Travel Tannies. All rights reserved.

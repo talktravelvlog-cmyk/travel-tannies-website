@@ -1,168 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Tannies | Southeast Asia Travel Experts</title>
-  <meta name="description" content="Travel Tannies - Southeast Asia Travel Consultancy. Custom trips, Bali honeymoons, Thailand packages, Vietnam tours and 1-on-1 travel planning.">
-  <link rel="canonical" href="https://talktravelvlog.online">
-  <meta name="robots" content="index,follow">
-
-  <meta property="og:title" content="Travel Tannies | Southeast Asia Travel Experts">
-  <meta property="og:description" content="Plan your dream Southeast Asia adventure with expert guidance, custom itineraries, and insider tips.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://talktravelvlog.online">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png">
-  <meta name="p:domain_verify" content="dada2d8639d8d2b2263d173ad543d1ef"/>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PV3T2PG3YN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'G-PV3T2PG3YN');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { margin:0; font-family: 'Inter', system-ui, -apple-system, sans-serif; background:#f0fffc; color:#0B1F3A; scroll-behavior:smooth; }
-    .topbar {position:sticky; top:0; z-index:2000; background:#14b8a6; color:#0B1F3A; text-align:center; padding:10px; font-weight:bold;}
-    .topbar a{color:#0B1F3A; text-decoration:none; margin-left:10px; font-weight:bold;}
-    header { background:#0B1F3A; color:white; padding:15px; text-align:center; position:sticky; top:0; z-index:1000; }
-    nav a { color:white; margin:0 12px; text-decoration:none; font-weight:bold; }
-    nav a:hover { color:#2dd4bf; }
-    section { padding:80px 22px; max-width:1100px; margin:auto; }
-    h1,h2,h3 { margin-bottom:20px; font-family:'Poppins', sans-serif; letter-spacing:-0.3px; }
-    .hero { background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover; color:white; padding:140px 20px; text-align:center; }
-    .hero h1 { font-size:52px; }
-    .btn { background:#14b8a6; color:#0B1F3A; padding:14px 26px; text-decoration:none; font-weight:600; border-radius:10px; display:inline-block; letter-spacing:0.3px; box-shadow:0 6px 14px rgba(20,184,166,0.35); border:none; cursor:pointer;}
-    .btn:hover { background:#0d9488 !important; color:white !important; transform:translateY(-2px); box-shadow:0 10px 22px rgba(13,148,136,0.45);}
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:25px; }
-    .card { background:white; padding:22px; border-radius:14px; box-shadow:0 10px 25px rgba(0,0,0,0.08); transition:all 0.3s ease; border:1px solid rgba(0,0,0,0.03); color:#0B1F3A;}
-    .card:hover { transform:translateY(-6px); box-shadow:0 18px 40px rgba(0,0,0,0.12);}
-    img { border-radius:10px; width:100%; height:180px; object-fit:cover; }
-    footer { background:#0B1F3A; color:white; text-align:center; padding:25px; }
-    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:16px; border-radius:50%; font-size:22px; text-decoration:none; z-index:5000; }
-  </style>
-
-  <script src="https://www.paypal.com/sdk/js?client-id=BAAq-sSPrRePHA_ZsEcB6k2eTmYH2WtSowOwHOADfsg5WaWUudB9g5p-XYi8GY5zhMHwS2RyTj634zAnc4&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tannies | Southeast Asia Travel Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 font-sans">
 
-<div class="topbar">FREE Southeast Asia Travel Quickstart Checklist → <a href="https://whop.com/checkout/plan_eLuRN5l0akJvj">Download Now</a></div>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-teal-600 tracking-tight">TRAVEL TANNIES</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-teal-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#packages" class="text-gray-700 hover:text-teal-600 px-3 py-2 font-medium">Packages</a>
+                        <a href="https://whop.com/travel-tannies/travel-quickstart-checklist/?v=2" class="bg-teal-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-teal-700 transition">Get Free Checklist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <div style="display:flex;align-items:center;justify-content:center;gap:15px;flex-wrap:wrap;">
-    <img src="https://api.dicebear.com/7.x/shapes/svg?seed=TravelTannies&backgroundColor=14b8a6,0B1F3A" alt="Travel Tannies Logo" style="width:60px;height:60px;border-radius:10px;">
-    <div>
-      <h1 style="margin:0;">Travel Tannies</h1>
-      <p style="margin:0;font-size:14px;opacity:0.9;">Southeast Asia Travel Consultancy</p>
-    </div>
-  </div>
-  <nav style="margin-top:10px;">
-    <a href="#services">Services</a>
-    <a href="#products">Shop</a>
-    <a href="#booking">Book</a>
-    <a href="#founder">About</a>
-    <a href="https://whop.com/checkout/plan_eLuRN5l0akJvj" style="color:#2dd4bf;">Free Checklist</a>
-  </nav>
-</header>
+    <header class="hero-gradient text-white py-32 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Expert Southeast Asia Travel Planning</h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">15 years of experience helping travelers navigate the magic of the East. Stop guessing, start exploring.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="https://whop.com/travel-tannies/travel-quickstart-checklist/?v=2" class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transform transition hover:-translate-y-1">
+                Get my free Travel Checklist
+            </a>
+            <a href="#packages" class="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 rounded-xl text-lg font-bold shadow-lg transform transition hover:-translate-y-1">
+                View Planning Packages
+            </a>
+        </div>
+    </header>
 
-<section class="hero">
-  <h1>Travel Southeast Asia With Confidence</h1>
-  <p style="max-width:750px;margin:20px auto;font-size:18px;line-height:1.6;">
-  Hi, I'm Yolanda from South Africa — the voice behind Travel Tannies. For more than 15 years my husband and I have been exploring Southeast Asia. We've made the mistakes so you don't have to.
-  </p>
+    <section id="packages" class="max-w-7xl mx-auto py-24 px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">Choose Your Level of Support</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex flex-col">
+                <h3 class="text-xl font-bold mb-2">Travel Tech Setup</h3>
+                <div class="text-3xl font-bold mb-6 text-teal-600">$97</div>
+                <ul class="mb-8 space-y-4 text-gray-600 flex-grow">
+                    <li>✓ Custom Google Map</li>
+                    <li>✓ Digital Document Vault</li>
+                    <li>✓ Safety & Navigation Apps</li>
+                    <li>✓ 30-min walkthrough</li>
+                </ul>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PASTE_YOUR_97_ID_HERE">
+                    <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">Get Tech Ready</button>
+                </form>
+            </div>
 
-  <div style="margin-top:30px;">
-    <a href="https://whop.com/checkout/plan_eLuRN5l0akJvj" class="btn" style="margin:8px;background:#ffffff;color:#0B1F3A;">Get My Free Travel Checklist</a>
-    <a href="#services" class="btn" style="margin:8px;">View Travel Services</a>
-  </div>
-</section>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-teal-500 flex flex-col relative">
+                <span class="absolute top-0 right-0 bg-teal-500 text-white px-4 py-1 rounded-bl-lg text-sm font-bold uppercase tracking-wider">Most Popular</span>
+                <h3 class="text-xl font-bold mb-2">The Full Roadmap</h3>
+                <div class="text-3xl font-bold mb-6 text-teal-600">$397</div>
+                <ul class="mb-8 space-y-4 text-gray-600 flex-grow">
+                    <li>✓ 14-Day Custom Itinerary</li>
+                    <li>✓ Accommodation Recommendations</li>
+                    <li>✓ Transport Booking Guide</li>
+                    <li>✓ Daily Activity Schedule</li>
+                </ul>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PASTE_YOUR_397_ID_HERE">
+                    <button type="submit" class="w-full bg-teal-600 text-white py-3 rounded-lg font-bold hover:bg-teal-700 transition">Start My Roadmap</button>
+                </form>
+            </div>
 
-<section id="leadmagnet" style="background:#fff; border-radius:20px; margin-top:40px; margin-bottom:40px;">
-  <div class="grid" style="align-items:center;max-width:900px;margin:auto;">
-    <div>
-      <img src="https://images.unsplash.com/photo-1502920917128-1aa500764b6e" style="height:auto; min-height:300px;" alt="Travel planning checklist">
-    </div>
-    <div style="padding:20px;">
-      <h2>Free Southeast Asia Quickstart Checklist</h2>
-      <p>Avoid the 7 biggest mistakes first‑time travelers make. Plan smarter, pack better, and travel with confidence.</p>
-      <ul style="text-align:left;margin-bottom:20px;line-height:1.8;">
-        <li>✔ 15 years of travel wisdom in one page</li>
-        <li>✔ What to book *before* your flight</li>
-        <li>✔ Essential packing tips for Gen X</li>
-      </ul>
-      <a href="https://whop.com/checkout/plan_eLuRN5l0akJvj" class="btn" style="width:100%; text-align:center;">Download Now for Free →</a>
-      <p style="font-size:12px;opacity:0.7;margin-top:10px;text-align:center;">Instant Access via Whop Community</p>
-    </div>
-  </div>
-</section>
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 flex flex-col">
+                <h3 class="text-xl font-bold mb-2">Full Concierge</h3>
+                <div class="text-3xl font-bold mb-6 text-teal-600">$477</div>
+                <ul class="mb-8 space-y-4 text-gray-600 flex-grow">
+                    <li>✓ Everything in Roadmap</li>
+                    <li>✓ 24/7 WhatsApp Support</li>
+                    <li>✓ Emergency Assistance</li>
+                    <li>✓ Restaurant Reservations</li>
+                </ul>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PASTE_YOUR_477_ID_HERE">
+                    <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-lg font-bold hover:bg-gray-800 transition">Go VIP</button>
+                </form>
+            </div>
 
-<section id="products">
-  <h2 style="text-align:center;">Signature Offers</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" width="100%">
-      <h3>The Gen X Globetrotter Bundle</h3>
-      <p><strong>$477 USD</strong></p>
-      <p>An all-in-one premium travel bundle for independent explorers.</p>
-      <div id="paypal-container-BKP9S9Z4YJGZE"></div>
-      <script>paypal.HostedButtons({hostedButtonId: "BKP9S9Z4YJGZE"}).render("#paypal-container-BKP9S9Z4YJGZE")</script>
-    </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60" width="100%">
-      <h3>Travel Planning: 1‑on‑1 Session</h3>
-      <p><strong>$397 USD</strong></p>
-      <p>A private strategy session tailored to your dream trip.</p>
-      <div id="paypal-container-Z6WT7VRPESGE2"></div>
-      <script>paypal.HostedButtons({hostedButtonId: "Z6WT7VRPESGE2"}).render("#paypal-container-Z6WT7VRPESGE2")</script>
-    </div>
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" width="100%">
-        <h3>Travel Tech Setup</h3>
-        <p><strong>$97 USD</strong></p>
-        <p>Apps, SIM solutions, and booking systems setup.</p>
-        <div id="paypal-container-UAL8KAG36RP86"></div>
-        <script>paypal.HostedButtons({hostedButtonId: "UAL8KAG36RP86"}).render("#paypal-container-UAL8KAG36RP86")</script>
-    </div>
-  </div>
-</section>
-
-<section id="founder">
-  <h2>The Story Behind Travel Tannies</h2>
-  <div class="grid" style="align-items:center;">
-    <div>
-      <img src="angkor.jpg.jpg" alt="Founder" style="height:auto;">
-    </div>
-    <div class="card">
-      <h3>15 Years of Exploring</h3>
-      <p>We've traveled from bustling cities to quiet villages across Southeast Asia. We created Travel Tannies to share what we've learned so you can travel with ease.</p>
-      <a href="#booking" class="btn">Chat With Me</a>
-    </div>
-  </div>
-</section>
-
-<section id="booking">
-  <h2>Book a Consultation</h2>
-  <p>Ready to plan? Purchase a session above, then tell us about your trip below.</p>
-  <form action="https://formsubmit.co/talk.travel.vlog@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <textarea name="message" rows="4" placeholder="Tell us about your trip"></textarea>
-    <button type="submit" class="btn" style="width:100%;">Submit Booking Request</button>
-  </form>
-</section>
-
-<footer style="margin-top:50px;">
-  <p>&copy; 2026 Travel Tannies. All travel dreams welcomed.</p>
-  <p><a href="https://whop.com/checkout/plan_eLuRN5l0akJvj" style="color:white; text-decoration:underline;">Join the Whop Community</a></p>
-</footer>
-
-<a href="https://wa.me/27713808973" class="whatsapp" target="_blank">💬</a>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 text-center">
+        <p class="mb-4">&copy; 2026 Travel Tannies. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://whop.com/travel-tannies/travel-quickstart-checklist/?v=2" class="hover:text-white">Free Checklist</a>
+            <a href="mailto:talk.travel.vlog@gmail.com" class="hover:text-white">Contact</a>
+        </div>
+    </footer>
 
 </body>
 </html>

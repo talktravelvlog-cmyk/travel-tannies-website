@@ -35,7 +35,7 @@
     nav a:hover { color:#2dd4bf; }
     section { padding:80px 22px; max-width:1100px; margin:auto; }
     h1,h2,h3 { margin-bottom:20px; font-family:'Poppins', sans-serif; letter-spacing:-0.3px; }
-    .hero { background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover; color:white; padding:140px 20px; text-align:center; position:relative;}
+    .hero { background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover; color:white; padding:140px 20px; text-align:center; position:relative; }
     .hero::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1; }
     .hero-content { position: relative; z-index: 2; }
     .hero h1 { font-size:52px; }
@@ -44,9 +44,14 @@
     .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:25px; }
     .card { background:white; padding:22px; border-radius:14px; box-shadow:0 10px 25px rgba(0,0,0,0.08); transition:all 0.3s ease; border:1px solid rgba(0,0,0,0.03);}
     .card:hover { transform:translateY(-6px); box-shadow:0 18px 40px rgba(0,0,0,0.12);}
-    img { border-radius:10px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;}
+    img { border-radius:10px; width:100%; height:200px; object-fit:cover; margin-bottom:15px; }
     footer { background:#0B1F3A; color:white; text-align:center; padding:40px 25px; }
-    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:16px; border-radius:50%; font-size:22px; text-decoration:none; z-index: 5000; }
+    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:16px; border-radius:50%; font-size:22px; text-decoration:none; z-index: 5000; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    .tabs { text-align:center; margin-bottom:30px; }
+    .tab-button { padding:10px 20px; border:none; background:#0B1F3A; color:white; cursor:pointer; margin:5px; border-radius:20px; font-weight:bold; }
+    .tab-button.active { background:#14b8a6; color:#0B1F3A; }
+    .tab-content { display:none; }
+    .tab-content.active { display:block; }
   </style>
   <script src="https://www.paypal.com/sdk/js?client-id=BAAq-sSPrRePHA_ZsEcB6k2eTmYH2WtSowOwHOADfsg5WaWUudB9g5p-XYi8GY5zhMHwS2RyTj634zAnc4&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
 </head>
@@ -55,12 +60,18 @@
 <div class="topbar">FREE Southeast Asia Travel Quickstart Checklist → <a href="https://whop.com/checkout/travel-quickstart-checklist/">Download Now</a></div>
 
 <header>
-  <h1>Travel Tannies</h1>
-  <nav>
+  <div style="display:flex;align-items:center;justify-content:center;gap:15px;flex-wrap:wrap;">
+    <div>
+      <h1 style="margin:0;">Travel Tannies</h1>
+      <p style="margin:0;font-size:14px;opacity:0.9;">Southeast Asia Travel Consultancy</p>
+    </div>
+  </div>
+  <nav style="margin-top:10px;">
     <a href="#services">Services</a>
     <a href="#products">Shop</a>
-    <a href="#itineraries">Itineraries</a>
+    <a href="#three-week-itinerary">Itineraries</a>
     <a href="#blog">Blog</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -69,22 +80,28 @@
   <div class="hero-content">
     <h1>Travel Southeast Asia With Confidence</h1>
     <p style="max-width:750px;margin:20px auto;font-size:18px;line-height:1.6;">
-    Hi, I'm Yolanda from South Africa — the voice behind Travel Tannies. For more than 15 years my husband and I have been exploring Southeast Asia — from temple towns in Thailand to quiet fishing villages in Vietnam and hidden beaches in Bali.
+    Hi, I'm Yolanda from South Africa — the voice behind Travel Tannies. For more than 15 years my husband and I have been exploring Southeast Asia — from temple towns in Thailand to quiet fishing villages in Vietnam and hidden beaches in Bali. Along the way we made plenty of mistakes, learned a lot, and discovered the places that make this region unforgettable.
+    </p>
+    <p style="max-width:750px;margin:15px auto;font-size:17px;line-height:1.6;">
+    Travel Tannies exists to help other Gen X travelers experience Southeast Asia with the same sense of curiosity and confidence — without spending months trying to figure everything out on their own.
     </p>
     <div style="margin-top:30px;">
       <a href="https://whop.com/checkout/travel-quickstart-checklist/" class="btn" style="margin:8px;background:#ffffff;color:#0B1F3A;">Start With The Free Travel Checklist</a>
+      <a href="#blog" class="btn" style="margin:8px;">Read Travel Stories</a>
     </div>
   </div>
 </section>
 
 <section id="founder">
   <h2>The Story Behind Travel Tannies</h2>
-  <div class="grid">
-    <div><img src="https://images.unsplash.com/photo-1548013146-72479768bbaa" alt="Angkor Temples"></div>
+  <div class="grid" style="align-items:center;">
+    <div>
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bbaa" alt="Angkor Temples" style="height:350px;">
+    </div>
     <div class="card">
       <h3>From Curious Travelers to Southeast Asia Guides</h3>
-      <p>My husband and I have been traveling through Southeast Asia for more than 15 years. Over that time we’ve explored bustling cities, quiet villages, night markets, and places most first‑time visitors don’t even know exist.</p>
-      <p>Along the way we made plenty of mistakes, learned a lot, and discovered the places that make this region unforgettable. Travel Tannies exists to help other Gen X travelers experience Southeast Asia with the same sense of curiosity and confidence.</p>
+      <p>My husband and I have been traveling through Southeast Asia for more than 15 years. Over that time we’ve explored bustling cities, quiet villages, night markets, temples, and islands. We’ve stayed in everything from simple guest houses to luxury resorts and learned that the best travel moments often happen when you step away from the most crowded tourist spots.</p>
+      <p>Along the way we made plenty of mistakes, learned a lot, and discovered the places that make this region unforgettable. Travel Tannies exists to help other Gen X travelers experience Southeast Asia with the same sense of curiosity and confidence — without spending months trying to figure everything out on their own.</p>
     </div>
   </div>
 </section>
@@ -94,15 +111,15 @@
   <div class="grid">
     <div class="card">
       <h3>Trying to See Too Many Places</h3>
-      <p>In our early trips, we tried to cram too many destinations into a short time. Travel days disappear between flights, boat transfers, and check‑ins. Now we focus on slower travel that lets you actually enjoy where you are.</p>
+      <p>In our early trips, we tried to cram too many destinations into a short time. We learned that travel days often disappear between flights, boat transfers, and check‑ins. Now we focus on slower travel that lets you actually enjoy where you are.</p>
     </div>
     <div class="card">
       <h3>Booking the Wrong Areas</h3>
-      <p>Where you stay changes your experience. We now know which areas in Bali, Thailand, and Vietnam offer the best balance of convenience and atmosphere.</p>
+      <p>Where you stay can completely change your experience. We’ve stayed in places that were too loud, too far from the action, or just didn't match the vibe we were looking for. We now know which areas in Bali, Thailand, and Vietnam offer the best balance of convenience and atmosphere.</p>
     </div>
     <div class="card">
       <h3>Not Checking Visa Rules Early</h3>
-      <p>Visa requirements for South Africans can be tricky. We’ve learned to check these months in advance to avoid last‑minute stress at the airport.</p>
+      <p>Visa requirements for South Africans (and many other nationalities) can be tricky and change often. We’ve learned to check these months in advance to avoid last‑minute stress at the airport.</p>
     </div>
   </div>
 </section>
@@ -112,43 +129,91 @@
   <div class="grid">
     <div class="card">
       <h3>1-on-1 Planning Session</h3>
-      <p>A personalized 60-minute session to map out your itinerary, answer your specific questions, and give you the confidence to book your trip.</p>
+      <p>A personalized 60‑minute session to map out your itinerary, answer your specific questions, and give you the confidence to book your trip.</p>
+      <a href="#products" class="btn" style="width:100%;text-align:center;box-sizing:border-box;">Learn More</a>
     </div>
     <div class="card">
       <h3>Custom Itinerary Design</h3>
-      <p>I build a day-by-day plan tailored to your travel style, pace, and interests, including recommendations for accommodation and transport.</p>
+      <p>I build a day-by-day plan tailored to your travel style, pace, and interests, including specific recommendations for accommodation, transport, and local experiences.</p>
+      <a href="#products" class="btn" style="width:100%;text-align:center;box-sizing:border-box;">Learn More</a>
     </div>
     <div class="card">
       <h3>Bali & Thailand Experts</h3>
-      <p>Benefit from 15 years of boots-on-the-ground experience. We know the hidden gems and the tourist traps to avoid.</p>
+      <p>Benefit from 15 years of boots-on-the-ground experience. We know the hidden gems, the ethical sanctuaries, and the tourist traps to avoid.</p>
+      <a href="#contact" class="btn" style="width:100%;text-align:center;box-sizing:border-box;">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="destinations">
+  <h2>Places I've Explored</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1" alt="Koh Samui">
+      <h3>Koh Samui, Thailand</h3>
+      <p>One of our favorite islands. We love the Fisherman's Village in Bophut for seaside dining and the vibrant night markets that bring the streets to life after sunset.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3" alt="Chiang Mai">
+      <h3>Chiang Mai, Thailand</h3>
+      <p>The cultural heart. From the stunning Doi Suthep temple overlooking the city to ethical sanctuaries like the Legend Elephant Sanctuary, Chiang Mai always feels special.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528127269322-539801943592" alt="Vietnam">
+      <h3>Ha Long Bay & Hanoi, Vietnam</h3>
+      <p>Vietnam is a feast for the senses. Whether it's the organized chaos of Hanoi's Old Quarter or a quiet boat cruise through Ha Long Bay, it's a country that stays with you.</p>
+    </div>
+  </div>
+</section>
+
+<section id="three-week-itinerary">
+  <h2>The Perfect 3-Week Southeast Asia Route</h2>
+  <div class="card">
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab('week1')">Week 1: Thailand</button>
+      <button class="tab-button" onclick="openTab('week2')">Week 2: Vietnam</button>
+      <button class="tab-button" onclick="openTab('week3')">Week 3: Bali</button>
+    </div>
+    <div id="week1" class="tab-content active">
+      <h3>Week 1: Bangkok & Northern Culture</h3>
+      <ul>
+        <li><strong>Bangkok (3 nights):</strong> Riverside temples, street food, and the Grand Palace.</li>
+        <li><strong>Chiang Mai (4 nights):</strong> Mountain temples, Old City charm, and elephant sanctuaries.</li>
+      </ul>
+    </div>
+    <div id="week2" class="tab-content">
+      <h3>Week 2: Vietnam Highlights</h3>
+      <ul>
+        <li><strong>Hanoi (3 nights):</strong> The Old Quarter, coffee culture, and history.</li>
+        <li><strong>Ha Long Bay (2 nights):</strong> Overnight cruise through limestone karsts.</li>
+        <li><strong>Hoi An (2 nights):</strong> Lantern-lit streets and ancient architecture.</li>
+      </ul>
+    </div>
+    <div id="week3" class="tab-content">
+      <h3>Week 3: Bali Island Life</h3>
+      <ul>
+        <li><strong>Ubud (4 nights):</strong> Rice terraces, sacred temples, and monkey forest.</li>
+        <li><strong>Uluwatu (3 nights):</strong> Cliffside temples, surf culture, and sunset beach clubs.</li>
+      </ul>
     </div>
   </div>
 </section>
 
 <section id="bali-itinerary">
-  <h2>The Perfect 2-Week Bali Itinerary</h2>
+  <h2>Featured Guide: 2 Weeks in Bali</h2>
   <div class="grid">
     <div class="card">
-      <h3>Days 1-5: Ubud</h3>
-      <p>The cultural heart. Rice terraces, sacred temples, and local artisan markets.</p>
+      <h3>Days 1-5: Ubud Culture</h3>
+      <p>Immerse yourself in Balinese culture, explore the Tegalalang Rice Terraces, and visit sacred temples like Tirta Empul.</p>
     </div>
     <div class="card">
-      <h3>Days 6-10: North Bali</h3>
-      <p>Mount Batur sunrise trekking and the quiet beaches of Amed.</p>
+      <h3>Days 6-10: North Bali & Volcanoes</h3>
+      <p>Hike Mount Batur at sunrise, visit the Ulun Danu Beratan temple, and explore the quiet beaches of Amed.</p>
     </div>
     <div class="card">
-      <h3>Days 11-14: Islands & Beach</h3>
-      <p>Explore the Nusa Islands or the cliffside sunset at Uluwatu Temple.</p>
+      <h3>Days 11-14: Island Relaxation</h3>
+      <p>Spend your final days on the Nusa Islands or enjoying the cliffside beach clubs of Uluwatu in the south.</p>
     </div>
-  </div>
-</section>
-
-<section id="itineraries">
-  <h2>3-Week Southeast Asia Route</h2>
-  <div class="card">
-    <p><strong>Week 1: Thailand</strong> - Start in Bangkok for temples and food, then head to Chiang Mai for culture.</p>
-    <p><strong>Week 2: Vietnam</strong> - Hanoi's Old Quarter, Ha Long Bay Cruise, and the lanterns of Hoi An.</p>
-    <p><strong>Week 3: Bali</strong> - Finish with spiritual Ubud and world-famous beaches in the south.</p>
   </div>
 </section>
 
@@ -157,16 +222,24 @@
   <div class="grid">
     <div class="card">
       <h3>Gen X Globetrotter Bundle</h3>
-      <p>The complete resource for planning your first big trip with confidence.</p>
+      <p>The ultimate resource for planning your first big trip with confidence.</p>
       <div id="paypal-container-BKP9S9Z4YJGZE"></div>
       <script>paypal.HostedButtons({hostedButtonId: "BKP9S9Z4YJGZE"}).render("#paypal-container-BKP9S9Z4YJGZE")</script>
     </div>
     <div class="card">
       <h3>1-on-1 Planning Session</h3>
-      <p>A 60-minute personalized planning session via Zoom.</p>
+      <p>A 60-minute session to map out your itinerary and answer your specific questions.</p>
       <div id="paypal-container-Z6WT7VRPESGE2"></div>
       <script>paypal.HostedButtons({hostedButtonId: "Z6WT7VRPESGE2"}).render("#paypal-container-Z6WT7VRPESGE2")</script>
     </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Fellow Travelers Say</h2>
+  <div class="grid">
+    <div class="card"><p>"Yolanda's advice for Chiang Mai was spot on. We loved the Legend Elephant Sanctuary!"</p><p><strong>— Sarah, UK</strong></p></div>
+    <div class="card"><p>"The 3-week itinerary made our first trip to Asia so much easier to plan."</p><p><strong>— Michael, South Africa</strong></p></div>
   </div>
 </section>
 
@@ -175,17 +248,27 @@
   <p>© 2026 Travel Tannies. All rights reserved.</p>
 </footer>
 
-<a href="https://wa.me/27713808973" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/27713808973" class="whatsapp" target="_blank">💬 WhatsApp</a>
 
 <div id="popup" style="position:fixed;bottom:30px;left:30px;background:white;padding:20px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.2);max-width:320px;z-index:9000;display:none;">
   <h3 style="margin-top:0;">Free Travel Checklist</h3>
-  <p>Planning Southeast Asia? Download the Quickstart Checklist and avoid common travel mistakes.</p>
-  <a href="https://whop.com/checkout/travel-quickstart-checklist/" class="btn" style="width:100%;text-align:center;">Download Now</a>
-  <p style="cursor:pointer;text-align:right;font-size:11px;margin-top:10px;" onclick="this.parentElement.style.display='none'">Close ✕</p>
+  <p>Download the Southeast Asia Quickstart Checklist and avoid common travel mistakes.</p>
+  <a href="https://whop.com/checkout/travel-quickstart-checklist/" class="btn" style="width:100%;text-align:center;display:block;box-sizing:border-box;">Download Now</a>
+  <p style="cursor:pointer;text-align:right;font-size:11px;margin-top:10px;color:#999;" onclick="this.parentElement.style.display='none'">Dismiss ✕</p>
 </div>
 
 <script>
-  setTimeout(() => { document.getElementById('popup').style.display = 'block'; }, 5000);
+function openTab(tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab-content");
+  for (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+  tablinks = document.getElementsByClassName("tab-button");
+  for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" active", ""); }
+  document.getElementById(tabName).style.display = "block";
+  event.currentTarget.className += " active";
+}
+
+setTimeout(() => { document.getElementById('popup').style.display = 'block'; }, 5000);
 </script>
 
 </body>
